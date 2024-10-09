@@ -1,0 +1,66 @@
+/* styles/styles.css */
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.ui {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.color-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.color-button:hover {
+  opacity: 0.8;
+}
+
+/* Assign initial colors to buttons */
+.color-button[data-color="#FF0000"] {
+  background-color: #FF0000;
+  color: #fff;
+}
+
+.color-button[data-color="#00FF00"] {
+  background-color: #00FF00;
+  color: #fff;
+}
+
+.color-button[data-color="#0000FF"] {
+  background-color: #0000FF;
+  color: #fff;
+}
+
+.color-button[data-color="#FFFF00"] {
+  background-color: #FFFF00;
+  color: #000;
+}
+
+.instructions {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
